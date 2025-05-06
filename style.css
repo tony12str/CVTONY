@@ -12,7 +12,7 @@ body {
   .container {
     text-align: center;
     width: 100%;
-    max-width: 800px; /* Limita el ancho máximo para pantallas grandes */
+    max-width: 800px;
     padding: 10px;
     box-sizing: border-box;
   }
@@ -27,6 +27,28 @@ body {
     margin: 0 auto;
   }
   
+  .portfolio-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .portfolio-link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .portfolio-link:active {
+    transform: scale(0.95);
+  }
+  
   /* Optimización para celulares */
   @media (max-width: 600px) {
     .container {
@@ -34,9 +56,15 @@ body {
     }
   
     img {
-      width: 98%; /* Aumenta el ancho para ocupar casi toda la pantalla */
-      max-width: none; /* Elimina restricciones de ancho máximo */
-      border: 1px solid #333; /* Borde más fino */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+      width: 98%;
+      max-width: none;
+      border: 1px solid #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .portfolio-link {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin-top: 15px;
     }
   }
