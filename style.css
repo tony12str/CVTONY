@@ -34,8 +34,9 @@ body {
     }
   
     img {
-      width: 95%; /* Usa casi todo el ancho disponible */
-      border: 1px solid #333; /* Borde más fino en móviles */
+      width: 98%; /* Aumenta el ancho para ocupar casi toda la pantalla */
+      max-width: none; /* Elimina restricciones de ancho máximo */
+      border: 1px solid #333; /* Borde más fino */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
     }
   }
