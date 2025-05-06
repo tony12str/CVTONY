@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo para pantallas grandes */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Optimización para celulares */
+  @media (max-width: 600px) {
+    .container {
+      padding: 5px;
+    }
+  
+    img {
+      width: 95%; /* Usa casi todo el ancho disponible */
+      border: 1px solid #333; /* Borde más fino en móviles */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    }
+  }
